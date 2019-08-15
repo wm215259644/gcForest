@@ -1,7 +1,9 @@
 # Deep Forest in Python
-Developed by Meng Wang, be based on much work of Pierre-Yves Lablanche
-Author has be working on Finacial Machine Learning
-*Status* : under active development
+Developed by Meng Wang, be based on much work of Pierre-Yves Lablanche.
+
+Author is researching on Finacial Machine Learning.
+
+*Status* : under active development.
 
 ## What's New
 version 0.1.0 : original version
