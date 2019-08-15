@@ -388,10 +388,13 @@ class GCForestRegressor(regressive_estimators):
 
             if accuracy_layer < accuracy_ref :
                 n_cascadeRF = getattr(self, 'n_cascadeRF')
-                cas_list, _, _ = self.get_cascade_estimators()
+                cas_list, _, cas_OOB = self.get_cascade_estimators()
                 for irf in range(n_cascadeRF):
                     for i, cas in enumerate(cas_list):
-                        delattr(self, '_cas%s_%d_%d'%(cas, self.n_layer, irf))
+                        if cas_OOB[cas]:
+                            delattr(self, '_cas%s_%d_%d'%(cas, self.n_layer, irf))
+                        elif not cas_OOB[cas] and irf==0:
+                            delattr(self, '_cas%s_%d_%d'%(cas, self.n_layer, irf))
                 self.n_layer -= 1
 
         elif y is None:
