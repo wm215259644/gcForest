@@ -8,10 +8,10 @@ Author is researching on Finacial Machine Learning.
 ## What's New
 version 0.1.0 : original version
 
-* You can use GCForestClassifier or GCForestRegressor to solve the correspondence problem;
-* You can input estimators which have scikit-learn API ( the classification should have .fit, .predict, .predict_proba, and the regression should have .fit, .predict ) with Function make_estimator. When it is used, the param is_customer will be True, and cross-validation in Multi Grain Scanning and each cascade layer.
-* You can Adding/Training Layers by kings of scoring, even defining your scoring strategy from scikit-learn metric functions
-* You can choose the method of cross-validation between 'group' and 'sequence', which can approach to problems either classification or regression.
+* You can use GCForestClassifier or GCForestRegressor to solve the corresponding problem;
+* You can input estimators which have scikit-learn API ( the classification should have functions of .fit, .predict, .predict_proba, and the regression should have functions of .fit, .predict ) with Function make_estimator. When you use Function make_estimator to input customer estimator, the cross-validation or OOB in Multi Grain Scanning and each cascade layer can be selected.
+* You can Adding/Training Layers by kinds of scoring, even defining your scoring strategy from scikit-learn metric functions
+* You can choose the method of cross-validation between 'group' and 'sequence', which can approach to targets for either classification or regression.
 
 
 ## Presentation
