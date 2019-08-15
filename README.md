@@ -21,7 +21,9 @@ The present **gcForest** implementation has been first developed as a Classifier
 
 Then the **gcForest** Regressor is developed basic on Classifier.  To be honest, the Regressor needs continuous improvement.
 
-You can find the official release of the code used in Zhou and Feng 2017 [here](https://github.com/kingfengji/gcforest). 
+You can find the official release of the code used in Zhou and Feng 2017 [here](https://github.com/kingfengji/gcforest)，
+and the popular version developed by Pierre-Yves [here](https://github.com/pylablanche/gcForest),
+
 
 ## Prerequisites
 
