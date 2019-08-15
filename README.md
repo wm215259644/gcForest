@@ -75,7 +75,7 @@ The main problem is the non-contiguous aspect of the sliced array with the origi
 
 **OOB score error**
 During the Random Forests training the Out-Of-Bag (OOB) technique is used for the prediction probabilities. It was found that this technique can sometimes raises an error when one or several samples is/are used for all trees training.<br>
-*A potential solution consists in using cross validation instead of OOB score although it slows down the training. Now you can set is_customer=True, and cv estimator will be used.*
+*A potential solution consists in using cross validation instead of OOB score although it slows down the training. Now you can select cv-estimator which costs more time.*
 
 
 ## License
